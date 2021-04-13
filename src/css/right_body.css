@@ -1,0 +1,44 @@
+.card_title {
+    position: relative;
+}
+
+.task_name {
+    font-size: 1.5rem;
+    margin: auto auto;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0.3rem;
+    border: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap_task_name {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.task_name_toolchip {
+    max-width: 26rem;
+    display: none;
+    position: absolute;
+    top: 3.5em;
+    left: 5rem;
+    z-index: 9999;
+    padding: 0.3em 0.5em;
+    color: #FFFFFF;
+    background: rbg(124, 124, 124);
+    border-radius: 0.5em;
+}
+
+.task_name_toolchip:after {
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.5em;
+    top: -0.8rem;
+    border-top: 0.8rem solid transparent;
+    border-left: 0.8rem solid rgb(124, 124, 124);
+}
