@@ -8,10 +8,17 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 
 const createWindow = (): void => {
   // Create the browser window.
+  // レンダラープロセス
   const mainWindow = new BrowserWindow({
-    height: 600,
+    height: 1000,
     width: 800,
-    alwaysOnTop: true // 常に最前面に表示する
+    minWidth: 700,
+    maxWidth: 700,
+    // HTML側でNode.jsを使用可能とする
+    webPreferences: {
+      nodeIntegration: true,
+      nodeIntegrationInWorker: true
+    }
   });
 
   // and load the index.html of the app.
@@ -21,9 +28,7 @@ const createWindow = (): void => {
   mainWindow.webContents.openDevTools();
 };
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
+// Electronの初期化完了後に実行。
 app.on('ready', createWindow);
 
 // Quit when all windows are closed, except on macOS. There, it's common
