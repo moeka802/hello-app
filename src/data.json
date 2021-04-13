@@ -1,0 +1,50 @@
+{
+    "projects": [
+        {
+            "id": "project1",
+            "name": "プロジェクト1",
+            "tasks": [
+                {
+                    "id": "task1",
+                    "name": "タスク名",
+                    "status": "Wait",
+                    "start_date": "2021/4/13",
+                    "due_date": "",
+                    "end_date": "",
+                    "detail": "",
+                    "subtasks": []
+                },
+                {
+                    "id": "task2",
+                    "name": "タスク名",
+                    "status": "Wail",
+                    "start_date": "2021/4/13",
+                    "due_date": "",
+                    "end_date": "2021/4/13",
+                    "detail": "",
+                    "subtasks": []
+                }, 
+                {
+                    "id": "task3",
+                    "name": "タスク名",
+                    "status": "Doing",
+                    "start_date": "2021/4/13",
+                    "due_date": "",
+                    "end_date": "",
+                    "detail": "",
+                    "subtasks": []
+                }
+            ]
+        }, 
+        {
+            "id": "project2",
+            "name": "プロジェクト2",
+            "tasks": []
+        },
+        {
+            "id": "project3",
+            "name": "プロジェクト3",
+            "tasks": []
+        }
+    ]
+}
